@@ -1,0 +1,17 @@
+{
+  "name": "silicon-example-site",
+  "private": true,
+  "scripts": { "dev": "next dev", "build": "next build", "typecheck": "next typegen && tsc --noEmit" },
+  "dependencies": {
+    "@silicon/website-seo-engine": "file:../..",
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

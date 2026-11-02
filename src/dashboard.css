@@ -1,0 +1,16 @@
+.silicon-cms{--silicon-accent:#5b3ca7;--silicon-surface:#fff;--silicon-text:#211b2f;--silicon-border:#ded9e8;color:var(--silicon-text);font:15px/1.5 system-ui,sans-serif;max-width:1200px;margin:auto;padding:32px}
+.silicon-cms *{box-sizing:border-box}
+.silicon-cms__header{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:24px}
+.silicon-cms__header h1{font-size:30px;margin:2px 0}
+.silicon-cms__header p{margin:0;color:#655f70}
+.silicon-cms__eyebrow{color:var(--silicon-accent)!important;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.silicon-cms__header a,.silicon-cms button{background:var(--silicon-accent);color:#fff;border:0;border-radius:8px;padding:10px 15px;text-decoration:none;font:inherit;font-weight:600;cursor:pointer}
+.silicon-cms button:disabled{opacity:.5;cursor:not-allowed}
+.silicon-cms__columns{display:grid;grid-template-columns:minmax(0,2fr) minmax(260px,1fr);gap:20px}
+.silicon-cms__panel{background:var(--silicon-surface);border:1px solid var(--silicon-border);border-radius:12px;padding:22px}
+.silicon-cms__panel h2{font-size:19px;margin:0 0 18px}
+.silicon-cms__field{display:grid;gap:6px;margin-bottom:17px;font-weight:600}
+.silicon-cms__field input:not([type=checkbox]),.silicon-cms__field textarea{width:100%;border:1px solid var(--silicon-border);border-radius:7px;padding:9px 11px;font:inherit;color:inherit;background:#fff}
+.silicon-cms__panel ul{padding-left:20px}
+.silicon-cms__panel li{margin:0 0 9px}
+@media(max-width:760px){.silicon-cms{padding:16px}.silicon-cms__columns{grid-template-columns:1fr}.silicon-cms__header{align-items:flex-start;flex-direction:column}}

@@ -1,0 +1,32 @@
+{
+  "site": {
+    "id": "example-site",
+    "name": "Example Site",
+    "pages": [{
+      "id": "about",
+      "path": "/about",
+      "label": "About",
+      "fields": {
+        "title": { "type": "text", "required": true, "maxLength": 120 },
+        "introduction": { "type": "richText", "required": true },
+        "seoTitle": { "type": "text", "required": true, "maxLength": 120 },
+        "seoDescription": { "type": "text", "required": true, "maxLength": 300 },
+        "indexable": { "type": "boolean" }
+      },
+      "seo": {
+        "titleField": "seoTitle",
+        "descriptionField": "seoDescription",
+        "indexField": "indexable"
+      }
+    }]
+  },
+  "pages": {
+    "about": {
+      "title": "About the Example Site",
+      "introduction": "This is the first published content from the reusable CMS.",
+      "seoTitle": "About the Example Site",
+      "seoDescription": "Learn about the Example Site and how its content is managed.",
+      "indexable": true
+    }
+  }
+}

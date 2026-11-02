@@ -1,0 +1,25 @@
+{
+  "site": {
+    "id": "example-site",
+    "name": "Example Site",
+    "pages": [
+      {
+        "id": "about",
+        "path": "/about",
+        "label": "About",
+        "fields": {
+          "title": { "type": "text", "required": true, "maxLength": 120 },
+          "introduction": { "type": "richText", "required": true },
+          "heroImage": { "type": "image" }
+        }
+      }
+    ]
+  },
+  "pages": {
+    "about": {
+      "title": "About us",
+      "introduction": "Our story",
+      "heroImage": "/images/about.jpg"
+    }
+  }
+}

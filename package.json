@@ -1,0 +1,91 @@
+{
+  "name": "@silicon/website-seo-engine",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Reusable CMS and SEO engine for Next.js websites",
+  "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./postgres": {
+      "types": "./dist/postgres.d.ts",
+      "default": "./dist/postgres.js"
+    },
+    "./next": {
+      "types": "./dist/next.d.ts",
+      "default": "./dist/next.js"
+    },
+    "./dashboard": {
+      "types": "./dist/dashboard.d.ts",
+      "default": "./dist/dashboard.js"
+    },
+    "./seo": {
+      "types": "./dist/seo.d.ts",
+      "default": "./dist/seo.js"
+    },
+    "./dashboard.css": "./src/dashboard.css",
+    "./auth": {
+      "types": "./dist/auth.d.ts",
+      "default": "./dist/auth.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "bin",
+    "migrations",
+    "docs",
+    "src/dashboard.css",
+    "examples/site-definition.ts",
+    "examples/import-content.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepack": "npm run build",
+    "db:migrate": "node bin/cli.mjs migrate",
+    "db:import": "node bin/cli.mjs import",
+    "predb:migrate": "npm run build",
+    "predb:import": "npm run build",
+    "db:check": "node bin/cli.mjs check",
+    "predb:check": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "next": "^16.4.3",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "pg": "^8.23.1"
+  },
+  "bin": {
+    "silicon-content-os": "./bin/cli.mjs"
+  }
+}
