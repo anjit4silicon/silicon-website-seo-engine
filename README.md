@@ -1,6 +1,6 @@
 # Silicon Website SEO Engine
 
-A reusable CMS and SEO engine for Next.js websites. This repository contains an early Next.js integration with a basic dashboard editor. The package remains private while broader features are built.
+A reusable CMS and SEO engine for Next.js websites. The [v0.3.0 public preview](https://github.com/anjit4silicon/silicon-website-seo-engine/releases/tag/v0.3.0) includes an installable package archive. This repository contains an early Next.js integration with a basic dashboard editor. The package remains private while broader features are built.
 
 Each website hosts its own dashboard and database and owns its routes, designs, schemas, branding, credentials, and content. The library supplies shared editing, publishing, SEO, and dashboard behavior.
 

@@ -4,7 +4,7 @@ This guide covers the current working integration for Next.js 16.4.x and React 1
 
 ## 1. Install and configure
 
-In the website project, install the current local package with `npm install /absolute/path/to/silicon-website-seo-engine`. Later, install a version from the chosen private registry. Add `CONTENT_OS_DATABASE_URL`, `CONTENT_OS_SESSION_SECRET` (32+ random characters), and `NEXT_PUBLIC_SITE_URL` to the website environment. Build the library before local installation with `npm run build`. The example app is in `examples/next-site`. Use a separate database for each website and environment.
+In the website project, install the [v0.3.0 GitHub preview archive](https://github.com/anjit4silicon/silicon-website-seo-engine/releases/tag/v0.3.0) with `npm install https://github.com/anjit4silicon/silicon-website-seo-engine/releases/download/v0.3.0/silicon-website-seo-engine-0.3.0.tgz`, or use `npm install /absolute/path/to/silicon-website-seo-engine` during local library development. The package is not yet on npm. Add `CONTENT_OS_DATABASE_URL`, `CONTENT_OS_SESSION_SECRET` (32+ random characters), and `NEXT_PUBLIC_SITE_URL` to the website environment. Build the library before local installation with `npm run build`. The example app is in `examples/next-site`. Use a separate database for each website and environment.
 
 Run the package CLI against that database. The CLI reads `CONTENT_OS_DATABASE_URL` from the process environment; a Next.js `.env.local` file is not automatically loaded by a standalone CLI. With Node 20.9+, use:
 
